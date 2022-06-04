@@ -74,7 +74,9 @@ class Home extends Component {
                 <TouchableOpacity style={{flex:1,justifyContent:'center',alignItems:'center'}}>
                     <Icon name="home" size={20} color="#FF5D5D" />
                 </TouchableOpacity>
-                <TouchableOpacity  style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+                <TouchableOpacity  style={{flex:1,justifyContent:'center',alignItems:'center'}}
+                onPress={()=> this.props.navigation.navigate('Gallery')}
+                >
                     <Icon name="folder-open" size={20} color="#8c8b8b" />
                 </TouchableOpacity>
                 <TouchableOpacity style={{flex:1,justifyContent:'center',alignItems:'center'}}>
